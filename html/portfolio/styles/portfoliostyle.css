@@ -1,0 +1,21 @@
+/*
+Creator: Jake White
+Date created: 07/09/2019
+Date last modified:
+*/
+
+.clear-float {
+	clear:both;
+}
+
+article img {
+	float: left;
+}
+
+article {
+	margin-bottom: 16px;
+}
+
+.right-content {
+	float:left;
+}

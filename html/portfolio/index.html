@@ -7,36 +7,68 @@ Most Recent Revision:
 <html lang="en">
 	<head>
 		<title>Jake White's Portfolio</title>
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+		<link href="styles/portfoliostyle.css" rel="stylesheet" type="text/css" />
+		<style>
+			table caption {
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-bottom: 8px;
+				}
+			table, th, td {
+				border: 1px solid #0d1f2d;
+				border-collapse: collapse;
+				padding: 5px 10px;
+				}
+			table {
+				width: 90%;
+				margin: auto;
+				}
+			tr {
+				height: 30px;
+				}
+			thead {
+				background-color: #546a7b;
+				color: #f2eded;
+				}
+			tbody tr:nth-child(odd) {
+				background-color: #e4c3ad;
+				}
+		</style>
 	</head>
 <main>
 	<body>
 		<header><h1>Portfolio for Jake White</h1></header>
 		<!-- We need to add links to the projects.html, contact.html, and testimonials.html -->
 		<nav>
-			<hr />
 			<p><a href="projects.html" target="_self">Projects</a></p>
 			<p><a href="contact.html">Contact</a></p>
 			<p><a href="testimonials.html">Testimonials</a></p>
-			<hr />
+			<div class="clear-float"></div>
 		</nav>
 		<section>
 		<article id="about-me">
 		<h2> <em>About Me</em> </h2>
-		<img src="images/IMG_1398.JPG" alt="Picture of my wife and I" />
-		<p>I am a recent recepient of a <strong>Master's Degree in Chemistry</strong> from the University of Minnesota. I am looking to transtion the skill set I developed studying computational chemistry to a career in technology.</p>
-		<p>I grew up in rural Iowa and studied chemistry and public health at <strong>Tulane University</strong> in New Orleans. I have lived in the Twin Cities for about three years, and I love the area.</p>
+		<img src="images/IMG_1398.JPG" alt="Picture of my wife and I" height="150px" />
+		<p>I am a recent recepient of a Master's Degree in Chemistry from the University of Minnesota. I am looking to transtion the skill set I developed studying computational chemistry to a career in technology.</p>
+		<p>I grew up in rural Iowa and studied chemistry and public health at Tulane University in New Orleans. I have lived in the Twin Cities for about three years, and I love the area.</p>
+		<div class="clear-float"></div>
 		</article>
 		
 		<article id="past-experiences">
 		<h2> <em>Past Experiences</em> </h2>
-		<img src="images/fall-2820083_640.jpg" alt="Trees in Minnesota during the Fall" />
+		<img src="images/fall-2820083_640.jpg" alt="Trees in Minnesota during the Fall" height="150px"/>
+		<div class="right-content">
 		<table border="1">
 			<caption>Employment History</caption>
+			<thead>
 			<tr>
 				<th>Dates of Empolyment</th>
 				<th>Title</th>
 				<th>Company</th>
 			</tr>
+			</thead>
+			<tbody>
 			<tr>
 				<td>2016-2017</td>
 				<td>EHS Technician</td>
@@ -47,12 +79,16 @@ Most Recent Revision:
 				<td>Teaching Assistant</td>
 				<td>University of Minnesota</td>
 			</tr>
+			</tbody>
 		</table>
+		</div>
+		<div class="clear-float"></div>
 		</article>
 		
 		<article id="hobbies">
 		<h2> <em>Hobbies</em> </h2>
 		<img src="images/dice-3380228_640.jpg" alt="Dungeons and Dragons Dice" />
+		<div class="right-content">
 		<ul style="list-style-type: circle;">
 			<li>Author</li>
 				<ol>
@@ -80,11 +116,12 @@ Most Recent Revision:
 					<li>Grilling</li>
 				</ul>
 		</ul>
+		</div>
+		<div class="clear-float"></div>
 		</article>
 		</section>
 		<footer>
-		<hr />
-		<p>&copy; 2020 Jacob White. All rights reserved.</p>
+			<p>&copy; 2020 Jacob White. All rights reserved.</p>
 		</footer>
 	</body>
 </main>
