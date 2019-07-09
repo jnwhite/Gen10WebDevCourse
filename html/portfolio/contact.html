@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Information Request</title>
+	</head>
+<main>
+	<body>
+		<h1>Contact Me</h1>
+		<hr />
+		<nav>
+			<p><a href="index.html" target="_self">Home</a></p>
+		</nav>
+		<hr />
+		<h2>Information Request</h2>
+		<form action="submit.html" method="POST">
+			<label for="firstNAME">First Name:</label> <br />
+			<input type="text" id="firstNAME" name="firstNAME" /> <br />
+			<label for="lastName">Last Name:</label> <br />
+			<input type="text" id="lastName" name="lastName" /> <br />
+			<label for="phone">Phone Number:</label> <br />
+			<input type="text" id="name" name="phone" /> <br />
+			
+			<label for="contact">Best time to call:</label><br />
+			<select id="contact" name="contact">
+			<option value="default" selected>--Select One--</option>
+			<option value="afternoon">Afternoon (12 pm to 5 pm Eastern)</option>
+			<option value"evening">Evening (5 pm to 8 pm Eastern)</option>
+			</select>
+			
+			<fieldset>
+			<legend>I am interested in (check all that apply) </legend><br />
+			<input type="checkbox" id="frontEnd" name="Inerested" value="frontEnd"/>
+			<label for="frontEnd">Front End Web Development</label><br />
+			<input type="checkbox" id="backEnd" name="Inerested" value="backEnd"/>
+			<label for="backEnd">Back End Web Development</label><br />
+			<input type="checkbox" id="database" name="Inerested" value="database"/>
+			<label for="database">Database Design</label><br />
+			</fieldset>
+			
+			<fieldset>
+			<legend>I have filled in the client questionnaire form:</legend><br />
+			<input type="radio" id="choice1" name="questionnaire" value="YES" />
+			<label for="choice1">Yes</label> <br />
+			<input type="radio" id="choicee2" name="questionnaire" value="NO" />
+			<label for="choice2">No</label> <br />
+			
+			<label for="info">Additional Information</label> <br />
+			<textarea id="info" name="info">
+			</textarea> <br />
+			<input type="submit" name="submit" value="submit"/>
+		</form>
+		<hr />
+		<footer>
+			<p>&copy: 2020 Jacob White.</p>
+		</footer>
+	</body>
+</main>
+</html>

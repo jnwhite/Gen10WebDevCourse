@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- 
+Name: Jake White
+Date Created: 07/09/2019
+Last Revision:
+-->
+<html lang="eng">
+	<head>
+		<title>Contact Us</title>
+	</head>
+	<body>
+		<header>
+			<p>Contact Us</p>
+			<hr />
+		</header>
+		
+		<h1>Family Table</h1>
+		
+		<hr />
+		<nav>
+			<p><a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="contact.html">Contact Us</a></p>
+		</nav>
+		<hr />
+		
+		</form action="submit.html" method="POST">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" /> <br />
+			<label for="email">Email:</label>
+			<input type="text" id="email" name="email" /> <br />
+			<label for="phone">Phone:</label>
+			<input type="text" id="phone" name="phone" /> <br />
+			
+			<label for="inquiry">Reason for Inquiry:</label>
+				<select id="inquiry" name="inquiry">
+					<option>Catering (default)</option>
+					<option>Private Party</option>
+					<option>Feedback</option>
+					<option>Other</option>
+				</select> <br />
+
+			<label for="information">Additional Information:</label>
+			<textarea id="information" name="information">
+			</textarea>
+			<br />
+			
+			<legend>Have you been to the restaurant?</legend>
+			<input type="radio" id="option1" name="option1" value="NO" checked/>
+			<label for="option1">No</label>
+			<input type="radio" id="option2" name="option2" value="YES" />
+			<label for="option2">Yes</label>
+			<br />
+			
+			<legend>Best days to contact you:</legend>
+			<input type="checkbox" id="m" name="m" value="M" />
+			<label for="m">M</label>
+			<input type="checkbox" id="t" name="t" value="T" />
+			<label for="m">T</label>
+			<input type="checkbox" id="w" name="w" value="W" />
+			<label for="m">W</label>
+			<input type="checkbox" id="th" name="th" value="Th" />
+			<label for="m">Th</label>
+			<input type="checkbox" id="f" name="f" value="F" />
+			<label for="m">F</label>
+			<br />
+			
+			<input type="submit" id="send" name="send" value="Send Request" />
+		</form>
+		
+		
+		<footer>
+			<hr />
+			<p>103 S. 1st St., Sandwich, MN, 54007<br>
+			(612) 222-3344</p>
+			<hr />
+		</footer>
+	</body>
+</html>
