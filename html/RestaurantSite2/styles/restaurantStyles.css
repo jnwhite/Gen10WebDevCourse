@@ -1,0 +1,44 @@
+/*
+Creator: Jake White
+Date created: 07/10/2019
+Date last modified:
+*/
+ header, footer {
+	 background-color: #55BF1D;
+	 color: #F10D0D;
+	 text-align: center;
+	 padding: 30px 20px 10px 20px;
+ }
+ 
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Playfair+Display&display=swap');
+
+h1 {
+	font-family: 'Comfortaa';
+}
+
+ nav {
+	 background-color: #BF4C1D;
+	 border-top: thin #F10D0D solid;
+	 border-bottom: thin #F10D0D solid;
+	 padding-top: 10px;
+	 padding-bottom: 10px;
+ }
+ 
+ nav a.btn {
+	background-color: #F10D0D;
+	color: #49F449;
+ }
+ 
+ nav a.btn:visited {
+		background-color: #49F449;
+		color: #F10D0D;
+ }
+ 
+ nav a.btn:hover {
+	 font-weight: bold;
+ }
+ 
+ nav a.btn:active {
+	 text-decoration: none;
+ }
+ 
