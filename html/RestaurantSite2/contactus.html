@@ -22,6 +22,11 @@ Last Revision: 07/11/2019
 				margin-right: 5px;
 				}
 			
+			.label-when-xs {
+				text-align: left;
+				margin-right: 5px;
+				}
+			
 			form {
 				margin-top: 15px;
 				margin-bottom: 15px;
@@ -47,29 +52,35 @@ Last Revision: 07/11/2019
 		
 		<form action="submit.html" method="POST">
 			<div class="form-group row align-items-center">
-				<label class="col-sm-3 col-form-label" for="name">Name:</label>
-				<div class="col-sm-6">
+				<label class="col-3 col-form-label" for="name">Name:</label>
+				<div class="col-6">
 					<input type="text" class="form-control" id="name" name="name" placeholder="Enter first and last name"/>
 				</div>
+				<div class="col-3">
+				</div>
 			</div>
 			
 			<div class="form-group row">
-				<label class="col-sm-3 col-form-label" for="email">Email:</label>
-				<div class="col-sm-6">
+				<label class="col-3 col-form-label" for="email">Email:</label>
+				<div class="col-6">
 					<input type="text" class="form-control" id="email" name="email" placeholder="Enter email" />
 				</div>
-			</div>
-			
-			<div class="form-group row">
-				<label class="col-sm-3 col-form-label" for="phone">Phone:</label>
-				<div class="col-sm-6">
-					<input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone number"/>
+				<div class="col-3">
 				</div>
 			</div>
 			
 			<div class="form-group row">
-				<label class="col-sm-3 col-form-label" for="inquiry">Reason for Inquiry:</label>
-				<div class="col-sm-6">
+				<label class="col-3 col-form-label" for="phone">Phone:</label>
+				<div class="col-6">
+					<input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone number"/>
+				</div>
+				<div class="col-3">
+				</div>
+			</div>
+			
+			<div class="form-group row">
+				<label class="col-3 col-form-label" for="inquiry">Reason for Inquiry:</label>
+				<div class="col-6">
 					<select class="form-control" id="inquiry" name="inquiry">
 						<option>Catering (default)</option>
 						<option>Private Party</option>
@@ -77,56 +88,64 @@ Last Revision: 07/11/2019
 						<option>Other</option>
 					</select>
 				</div>
+				<div class="col-3">
+				</div>
 			</div>
 			
 			<div class="form-group row">
-				<label class="col-sm-3 col-form-label" for="information">Additional Information:</label>
-				<div class="col-sm-6">
+				<label class="col-3 col-form-label" for="information">Additional Information:</label>
+				<div class="col-6">
 					<textarea class="form-control" id="information" name="information">
 					</textarea>
+				</div>
+				<div class="col-3">
 				</div>
 			</div>
 
 			<fieldset class="form-group">
 			<div class="row">
-				<legend class="col-form-label col-sm-3">Have you been to the restaurant?</legend>
-				<div class="row col-sm-6">
-					<div class="form-check">			
+				<legend class="col-form-label col-3">Have you been to the restaurant?</legend>
+				<div class="row col-6">
+					<div class="form-check form-check-inline">			
 						<input class="form-check-input" type="radio" id="option1" name="option1" value="NO" checked/>
 						<label class="form-check-label" for="option1">No</label>
 					</div>
-					<div class="form-check">
+					<div class="form-check form-check-inline">
 						<input class="form-check-input" type="radio" id="option2" name="option2" value="YES" />
 						<label class="form-check-label" for="option2">Yes</label>
 					</div>
 				</div>
+				<div class="col-3">
+				</div>
 			</div>
 			</fieldset>
-
+			
 			<fieldset class="form-group">
 				<div class="row">
-					<legend class="col-form-label col-sm-3">Best days to contact you:</legend>
-					<div class="row col-sm-6">
-						<div class="form-check">
+					<legend class="col-form-label col-3">Best days to contact you:</legend>
+					<div class="row col-6">
+						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="checkbox" id="m" name="m" value="M" />
 							<label class="form-check-label" for="m">M</label>
 						</div>
-						<div class="form-check">
+						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="checkbox" id="t" name="t" value="T" />
-							<label class="form-check-label" for="m">T</label>
+							<label class="form-check-label" for="t">T</label>
 						</div>
-						<div class="form-check">
+						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="checkbox" id="w" name="w" value="W" />
-							<label class="form-check-label" for="m">W</label>	
+							<label class="form-check-label" for="w">W</label>
 						</div>
-						<div class="form-check">
+						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="checkbox" id="th" name="th" value="Th" />
-							<label class="form-check-label" for="m">Th</label>
+							<label class="form-check-label" for="th">Th</label>
 						</div>
-						<div class="form-check">
+						<div class="form-check form-check-inline">
 							<input class="form-check-input" type="checkbox" id="f" name="f" value="F" />
-							<label class="form-check-label" for="m">F</label>
+							<label class="form-check-label" for="f">F</label>
 						</div>
+					</div>
+					<div class="col-3">
 					</div>
 				</div>
 			</fieldset>
