@@ -1,15 +1,22 @@
 /*
 Creator: Jake White
 Date created: 07/10/2019
-Date last modified:
+Date last modified: 07/22/2019
 */
- header, footer {
+ div.jumbotron {
 	 background-color: #55BF1D;
 	 color: #F10D0D;
 	 text-align: center;
 	 padding: 30px 20px 10px 20px;
  }
  
+ div.carousel {
+	 text-align: center;
+	 font-size: 1.2em;
+	 padding-top: 10px;
+	 margin-bottom: 10px;
+	 background-color: purple;
+ }
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Playfair+Display&display=swap');
 
 h1 {
@@ -21,8 +28,7 @@ h1 {
 	 background-color: #BF4C1D;
 	 border-top: thin #F10D0D solid;
 	 border-bottom: thin #F10D0D solid;
-	 padding-top: 10px;
-	 padding-bottom: 10px;
+	 padding: 10px 5px 10px 5px;
  }
  
  nav a.btn {
