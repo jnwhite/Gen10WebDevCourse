@@ -1,13 +1,29 @@
 /*
 Creator: Jake White
 Date created: 07/10/2019
-Date last modified: 07/22/2019
+Date last modified: 07/24/2019
 */
  div.jumbotron {
-	 background-color: #55BF1D;
-	 color: #F10D0D;
+	 background-color: Tomato;
+	 color: DarkSlateGray;
 	 text-align: center;
-	 padding: 30px 20px 10px 20px;
+	 width: 100%;
+	 border-style: ridge;
+	 border-width: 5px;
+	 border-color: SlateGray;
+	 padding-top: 15px;
+	 padding-bottom: 15px;
+	 margin-bottom: 5px;
+	 margin-left: 0px;
+	 margin-right: 0px;
+ }
+ 
+ div.jumbotron .announcement {
+	 font-family: 'Courgette', cursive;
+ }
+ 
+ div.jumbotron p {
+	 font-size: 1.1em;
  }
  
  div.carousel {
@@ -15,37 +31,67 @@ Date last modified: 07/22/2019
 	 font-size: 1.2em;
 	 padding-top: 10px;
 	 margin-bottom: 10px;
-	 background-color: purple;
+	 background-color: GoldenRod;
+	 border-style: inset;
+	 border-color: SlateGray;
+	 border-width: 5px;
  }
-@import url('https://fonts.googleapis.com/css?family=Comfortaa|Playfair+Display&display=swap');
+ 
+ div.carouselRow {
+	 background-color: none;
+	 width: 100%;
+	 padding: 0px;
+	 margin-top: 0px;
+	 margin-bottom: 0px;
+	 margin-left: auto;
+	 margin-right: auto;
+ }
 
-h1 {
-	font-family: 'Comfortaa';
+
+div.main-section {
+	background-color: Silver;
+	width: 100%;
+	padding: 0;
+				}
+
+div.familyDiner h1 {
+	font-family: 'Geostar', Times;
 	text-align: center;
+	background-color: SkyBlue;
+	border-style: double;
+	border-width: 5px;
+	border-color: DarkSlateGray;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
  nav {
-	 background-color: #BF4C1D;
-	 border-top: thin #F10D0D solid;
-	 border-bottom: thin #F10D0D solid;
+	 background-color: SlateGray;
+	 border-top: thin red solid;
+	 border-bottom: thin red solid;
 	 padding: 10px 5px 10px 5px;
  }
  
- nav a.btn {
-	background-color: #F10D0D;
-	color: #49F449;
+  nav a.btn {
+		background-color: maroon;
+		color: goldenrod;
  }
  
- nav a.btn:visited {
-		background-color: #49F449;
-		color: #F10D0D;
+  nav a.btn:visited {
+	 background-color: Silver;
+	 color: tomato;
  }
  
  nav a.btn:hover {
 	 font-weight: bold;
+	 text-decoration: underline;
  }
  
  nav a.btn:active {
-	 text-decoration: none;
+	background-color: tomato;
+	color: silver;
+	text-decoration: none;
  }
- 

@@ -1,3 +1,9 @@
+/*
+Creator: Jake White
+Date created: 07/23/2019
+Date last modified: 07/24/2019
+*/
+
 function clearErrors() {
 	for (var loopCounter = 0; loopCounter < document.forms["contactForm"].elements.length; loopCounter++) {
 		if (document.forms["contactForm"].elements[loopCounter].parentElement.className.indexOf("has-") != -1) {
@@ -7,8 +13,6 @@ function clearErrors() {
 			}
 		}
 	}
-	
-	document.getElementById("confirm-validation").style.display = "none";
 }
 
 function validateItems() {
@@ -66,7 +70,7 @@ function validateItems() {
 	
 	if (okayMessage === 0) {
 		document.getElementById("confirm-validation").style.display = "block";
-	}
-	
-	return false;
+		return true;
+	} else{document.getElementById("confirm-validation").style.display = "none";
+	return false;}
 }
