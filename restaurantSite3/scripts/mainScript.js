@@ -27,32 +27,37 @@ function validateItems() {
 		document.getElementById("invalidName").style.display = "inline";
 		document.forms["contactForm"]["name"].parentElement.className = "col has-error";
 		okayMessage++;
-	} else{document.getElementById("invalidName").style.display = "none";}
+	} else{
+		document.getElementById("invalidName").style.display = "none";}
 	
 	if (cusEmail == "" || document.getElementById('email').validity.patternMismatch) {
 		document.getElementById("invalidEmail").style.display = "inline";
 		document.forms["contactForm"]["email"].parentElement.className = "col has-error";
 		okayMessage++;
-	} else{document.getElementById("invalidEmail").style.display = "none";}
+	} else{
+		document.getElementById("invalidEmail").style.display = "none";}
 	
 	if (cusPhone == "" || document.getElementById('phone').validity.patternMismatch) {
 		document.getElementById("invalidPhone").style.display = "inline";
 		document.forms["contactForm"]["phone"].parentElement.className = "col has-error";
 		okayMessage++;
-	} else{document.getElementById("invalidPhone").style.display = "none";}
+	} else{
+		document.getElementById("invalidPhone").style.display = "none";}
 	
 	if (cusAdd == "") {
 		document.getElementById("invalidInformation").style.display = "inline";
 		document.forms["contactForm"]["information"].parentElement.className = "col has-error";
 		okayMessage++;
-	} else{document.getElementById("invalidInformation").style.display = "none";}
+	} else{
+		document.getElementById("invalidInformation").style.display = "none";}
 	
 	if (document.getElementById("option1").checked == false && document.getElementById("option2").checked == false) {
 		document.getElementById("invalidOptions").style.display = "inline";
 		document.forms["contactForm"]["option1"].parentElement.className = "form-check form-check-inline col-xs-1 has-error";
 		document.forms["contactForm"]["option2"].parentElement.className = "form-check form-check-inline col-xs-1 has-error";
 		okayMessage++
-	} else{document.getElementById("invalidOptions").style.display = "none";}
+	} else{
+		document.getElementById("invalidOptions").style.display = "none";}
 	
 	if (document.getElementById("m").checked == false
 		&& document.getElementById("t").checked == false
@@ -66,7 +71,8 @@ function validateItems() {
 		document.forms["contactForm"]["th"].parentElement.className = "form-check form-check-inline col-xs-1 has-error";
 		document.forms["contactForm"]["f"].parentElement.className = "form-check form-check-inline col-xs-1 has-error";
 		okayMessage++
-	} else{document.getElementById("invalidDays").style.display = "none";}
+	} else{
+		document.getElementById("invalidDays").style.display = "none";}
 	
 	if (okayMessage === 0) {
 		document.getElementById("confirm-validation").style.display = "block";

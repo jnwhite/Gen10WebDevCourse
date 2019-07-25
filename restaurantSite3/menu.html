@@ -49,7 +49,7 @@ Last Revision: 07/24/2019
 				margin-top: 5px;
 				margin-bottom: 15px;
 				}
-				
+								
 			span.item {
 				display: block;
 				text-align: center;
@@ -113,10 +113,10 @@ Last Revision: 07/24/2019
 		</div>
 		
 		<div class="row">
-			<div class="col-2">
+			<div class="col">
 			</div>
-		
-			<div id="threeItemCarousel" class="carousel slide col-8" data-ride="carousel">
+			<!-- Carousel for lg and xl -->
+			<div id="threeItemCarousel" class="d-none d-lg-block carousel slide col-8" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<p class="d-block w-100">We're opening a new location!</p>
@@ -129,8 +129,50 @@ Last Revision: 07/24/2019
 					</div>
 				</div>
 			</div>
+			<!-- Carousel for md -->
+			<div id="threeItemCarousel" class="d-none d-md-block d-lg-none carousel slide col-8" style="height:100px;" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active" style="padding-top:20px;">
+						<p class="d-block w-100">We're opening a new location!</p>
+					</div>
+					<div class="carousel-item">
+						<p class="d-block w-100">We're rolling out our seasonal menu, with special options for this season.</p>
+					</div>
+					<div class="carousel-item" style="padding-top:20px;">
+						<p class="d-block w-100">The Drink of the Month is SG Special Brew.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel for sm -->
+			<div id="threeItemCarousel" class="d-none d-sm-block d-md-none carousel slide col-8" style="height:100px;" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active" style="padding-top:20px;">
+						<p class="d-block w-100">We're opening a new location!</p>
+					</div>
+					<div class="carousel-item">
+						<p class="d-block w-100">We're rolling out our seasonal menu, with special options for this season.</p>
+					</div>
+					<div class="carousel-item">
+						<p class="d-block w-100">The Drink of the Month is SG Special Brew.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel for xs -->
+			<div id="threeItemCarousel" class="d-block d-sm-none carousel slide col-10" style="height:100px;" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<p class="d-block w-100" style="padding-top:20px;">We're opening a new location!</p>
+					</div>
+					<div class="carousel-item">
+						<p class="d-block w-100">We're rolling out our seasonal menu, with special options for this season.</p>
+					</div>
+					<div class="carousel-item">
+						<p class="d-block w-100" style="padding-top:20px;">The Drink of the Month is SG Special Brew.</p>
+					</div>
+				</div>
+			</div>
 		
-			<div class="col-2">
+			<div class="col">
 			</div>
 		</div>
 		
